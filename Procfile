@@ -1,4 +1,4 @@
-release: python manage.py makemigrations --no-output
-release: python manage.py migrate --no-output
+release: python manage.py makemigrations
+release: python manage.py migrate
 
 web: gunicorn server.wsgi
